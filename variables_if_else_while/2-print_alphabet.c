@@ -13,8 +13,8 @@ int main(void)
 
 	while (abc <= 'z')
 	{
-		putschar(abc);
-		ch++;
+		putchar(abc);
+		abc++;
 	}
 
 		return (0);
