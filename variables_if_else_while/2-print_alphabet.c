@@ -12,9 +12,9 @@ int main(void)
 	char abc = 'a';
 
 	for (abc ; abc <= 'z'; abc++)
-
+	{
 		putchar(abc);
 		putchar ('\n');
-
+	}
 		return (0);
 }
