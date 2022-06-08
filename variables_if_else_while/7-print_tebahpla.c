@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - Entry point
@@ -9,13 +8,13 @@
 
 int main(void)
 {
-	int n = 9;
+	char x = 'z';
 
-	while (n != -1)
+	while (x >= 'a')
 	{
-		printf("%d", n);
-		n--;
+		putchar(x);
+		x--;
 	}
-	printf("\n");
+	putchar('\n');
 	return (0);
 }
