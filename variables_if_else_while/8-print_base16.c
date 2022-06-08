@@ -9,7 +9,7 @@
 int main(void)
 {
 	int x = 48;
-	char abc;
+	char abc = 'a';
 
 	while (x != 58)
 	{
@@ -17,9 +17,10 @@ int main(void)
 		x++;
 	}
 
-	for (abc = 'a'; abc <= 'f'; abc++)
+	while (abc <= 'f')
 	{
-			putchar(abc);
+		putchar(abc);
+		abc++;
 	}
 	putchar('\n');
 	return (0);
