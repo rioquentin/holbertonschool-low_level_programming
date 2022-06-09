@@ -5,8 +5,7 @@
  *
  * Return: Always 0 (Success)
  */
-
-int main(void)
+void print_alphabet(void)
 {
 	char a;
 
@@ -15,5 +14,10 @@ int main(void)
 		_putchar(a);
 	}
 	_putchar('\n');
+}
+
+int main(void)
+{
+	void ptiny_alphabet(void);
 	return (0);
 }
