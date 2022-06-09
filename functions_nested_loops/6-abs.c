@@ -2,21 +2,11 @@
 
 /**
  * _abs - print he absolute value.
- * @int: number
+ * @ab: number
  * Return: Always 0.
  */
 
-int _abs(int)
+int _abs(int ab)
 {
-
-	if (n >= 0)
-	{
-		_putchar('n');
-	}
-	else
-	{
-		n = n * -1;
-		putchar('n');
-	}
-	return (0);
+		return (ab * ((ab > 0) - (ab < 0)));
 }
