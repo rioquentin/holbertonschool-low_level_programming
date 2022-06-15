@@ -2,8 +2,8 @@
 
 /**
  * puts2 - function
- * @
- * Return: 
+ * @str: string
+ * Return: 1
  */
 
 void puts2(char *str)
@@ -16,9 +16,9 @@ void puts2(char *str)
 		{
 			_putchar(str[i]);
 		}
-		else if (i % 2 ==0)
+		else if (i % 2 == 0)
 		{
-			_putchar(str[i];
+			_putchar(str[i]};
 					}
 					}
 					_putchar('\n');
