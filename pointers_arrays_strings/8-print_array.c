@@ -9,5 +9,10 @@
 
 void print_array(int *a, int n)
 {
-	_putchar(a[n]);
+	int i;
+
+	for (i = 0; a[i] < n; i++)
+	{
+		_putchar(a[i]);
+	}
 }
