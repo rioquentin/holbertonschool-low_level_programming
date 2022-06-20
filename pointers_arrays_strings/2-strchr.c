@@ -14,6 +14,13 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; s[i] != c; i++)
 		;
-	ptr = &s[i];
+	if (i == '\0')
+	{
+		ptdr = NULL;
+	}
+	else
+	{
+		ptr = &s[i];
+	}
 	return (ptr);
 }
