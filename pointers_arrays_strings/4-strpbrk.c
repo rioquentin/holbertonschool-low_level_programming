@@ -2,7 +2,7 @@
 #include <stddef.h>
 
 /**
- * _strspn - function
+ * _strpbrk - function
  * @s: s
  * @accept: accept
  * Return: x
