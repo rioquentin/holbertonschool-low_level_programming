@@ -23,8 +23,10 @@ unsigned int _strspn(char *s, char *accept)
 				n = n + 1;
 			}
 		}
-		t = t + 1
 		x = 0;
+
+		t = t + 1;
+
 		if (n != t)
 		{
 			break;
