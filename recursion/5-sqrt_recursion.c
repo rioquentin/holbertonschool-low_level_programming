@@ -8,7 +8,7 @@
  * Return: n
  */
 
-int _sqrt(int n, int i);
+int _sqrt(int n, int i)
 {
 	if (i < 0)
 		return;
