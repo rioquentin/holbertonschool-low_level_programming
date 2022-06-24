@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * whatsmyname - function
+ * main - function
  * @argc: argc
- * @arcg: argv
+ * @arcv: argv
  * Return: x
  */
 
