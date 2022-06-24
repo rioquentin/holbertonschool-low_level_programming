@@ -2,7 +2,6 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - function
  * _sqrt - function
  * @n: n
  * @i: i
@@ -20,6 +19,12 @@ int _sqrt(int n, int i)
 	else
 		return (_sqrt(n, (i + 1)));
 }
+
+/**
+ * _sqrt_recursion -function
+ * @n: n
+ * Return: x
+ */
 
 int _sqrt_recursion(int n)
 {
