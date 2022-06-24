@@ -7,9 +7,8 @@
  * Return: x
  */
 
-int main(int argc, char *argv[])
+int main(int argc)
 {
-	int i;
 
 	printf("%d\n", argc);
 	return (0);
