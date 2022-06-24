@@ -10,11 +10,15 @@
 
 int main(int argc, char *argv[])
 {
-	int num1 = atoi(argv[1]);
-	int num2 = atoi(argv[2]);
-	unsigned int result = num1 * num2;
+	int i, result = 1;
 
-	(void)argc;
-	printf("%d\n", result);
+	if (argc < 3)
+		printf("Error\n");
+	else
+	{
+		for (i = 1; i < argc; i++)
+			result *= atoi(argv[i]);
+		printf("%d\n", result);
+	}
 	return (0);
 }
