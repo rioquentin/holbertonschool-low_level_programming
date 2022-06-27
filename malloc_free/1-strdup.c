@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	int i, size, n;
+	int i, size;
 	char *a;
 
 	for (i = 0; str[i] != '\0'; i++)
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 	if (a == NULL)
 		return (NULL);
 
-	for (n = 0; str[i] != '\0'; n++)
+	for (i = 0; str[i] != '\0'; n++)
 	{
 		a[i] = str[i];
 	}
