@@ -13,12 +13,6 @@ char *_strdup(char *str)
 	int i, size;
 	char *a;
 
-	if (str == NULL)
-	{
-		printf("failed to allocate memory\n");
-		return (1);
-	}
-
 	for (i = 0; str[i] != '\0'; i++)
 		;
 	size = i;
