@@ -10,10 +10,10 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	int i, n, m, x, z;
+	int i, n, m, x;
 	char *a;
 
-	if (s1 = NULL || s2 = NULL)
+	if (s1 == NULL || s2 == NULL)
 		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
