@@ -11,9 +11,9 @@
 char *_strdup(char *str)
 {
 	int i, size, n;
-	int *a;
+	char *a;
 
-	for (i = 0; str[i] != '\0')
+	for (i = 0; str[i] != '\0'; i++)
 		;
 	size = i;
 
