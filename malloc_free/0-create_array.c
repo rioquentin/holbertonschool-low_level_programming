@@ -11,9 +11,8 @@
 
 char *create_array(unsigned int size, char c)
 {
-	char array[];
 	int i;
-	char *a = &array;
+	char *a;
 
 	if (size == 0)
 		return (NULL);
@@ -21,12 +20,11 @@ char *create_array(unsigned int size, char c)
 	a = malloc(size * sizeof(char));
 	if (a == NULL)
 	{
-		fprintf(stderr, "Not enough memory left!\n");
-		return (1);
+		return (NULL);
 	}
 
 	for (i = 0; i < size; i++)
-		array[i] = c;
+		a[i] = c;
 
-	return (array);
+	return (a);
 }
