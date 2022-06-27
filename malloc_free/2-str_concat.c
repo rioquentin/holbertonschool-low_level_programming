@@ -1,7 +1,6 @@
-#include "main.h"
 #include <stdlib.h>
 #include <stddef.h>
-
+#include <stdio.h>
 /**
  * str_concat - function
  * @s1: s1
@@ -12,26 +11,27 @@
 char *str_concat(char *s1, char *s2)
 {
 	int i, n, m, x, z;
-	int size;
 	char *a;
+
+	if (s1 = NULL || s2 = NULL)
+		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
 		;
-	for (n = 0; s2[i] != '\0'; n++)
+	for (n = 0; s2[n] != '\0'; n++)
 		;
-	size = i + n;
 
-	a = malloc((size * sizeof(char)) + 1);
+	a = malloc(((i + n) * sizeof(char)) + 1);
 	if (a == NULL)
 		return (NULL);
 
-	while (m < size)
+	for (m = 0; m < i; m++)
 	{
-		for (x = 0; x < i; x++, m++)
-			a[m] = s1[x];
-
-		for (z = 0; z < n; z++, m++)
-			a[m] = s2[z];
+		a[m] = s1[m];
+	}
+	for (x = 0; x < n; x++, m++)
+	{
+		a[m] = s2[x];
 	}
 
 	return (a);
