@@ -14,4 +14,6 @@ void *malloc_checked(unsigned int b)
 
 	p = malloc(b * sizeof(unsigned int));
 	(void)p;
+
+	return (p);
 }
