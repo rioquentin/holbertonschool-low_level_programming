@@ -21,10 +21,10 @@ int **alloc_grid(int width, int height)
 
 	for (n = 0; n < width; n++)
 	{
-		for (x = 0; x < heigth; x++)
+		for (x = 0; x < height; x++)
 		{
 			a[n][x] = 0;
 		}
 	}
-	return (a)
+	return (a);
 }
