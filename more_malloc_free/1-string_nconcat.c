@@ -22,7 +22,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (i = 0; s1[i] != '\0'; i++)
 		;
-	for (x = 0; x < n; x++)
+	for (x = 0; x <= n && s2[x] != '\0'; x++)
 		;
 	size = i + x + 1;
 
