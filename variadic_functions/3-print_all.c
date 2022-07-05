@@ -19,9 +19,9 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (format[x] && format)
+	while (format && format[x])
 		x++;
-	while (format[i] && format)
+	while (format && format[i])
 	{
 		if (i == (x - 1))
 			s = "";
@@ -40,7 +40,7 @@ void print_all(const char * const format, ...)
 			case 's':
 				m = va_arg(ap, char *);
 				if (m == NULL)
-					m = "(nil)";
+						m = "(nil)";
 				printf("%s%s", m, s);
 				break;
 		}
