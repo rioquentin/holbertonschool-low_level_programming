@@ -3,6 +3,8 @@
 
 /**
  * struct op - struct
+ * @op: op
+ * @f: f
  */
 
 typedef struct op
