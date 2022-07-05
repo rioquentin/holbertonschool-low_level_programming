@@ -9,7 +9,7 @@
  */
 
 
-void print_all(const char * const format, ...);
+void print_all(const char * const format, ...)
 {
 	va_list ap;
 	int i = 0;
