@@ -21,7 +21,7 @@ void print_all(const char * const format, ...)
 
 	while (format[x] != '\0')
 		x++;
-	while (format[i] != '\0')
+	while ((format[i] != '\0') && (format))
 	{
 		if (i == (x - 1))
 			s = "";
