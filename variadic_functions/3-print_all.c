@@ -3,10 +3,10 @@
 #include <stdarg.h>
 
 /**
- *  * print_all - function to print all int
- *   * @format: format
- *    * Return: void
- *     */
+ * print_all - function to print all int
+ * @format: format
+ * Return: void
+ */
 
 
 void print_all(const char * const format, ...)
