@@ -19,9 +19,9 @@ void print_all(const char * const format, ...)
 
 	va_start(ap, format);
 
-	while (format[x] != '\0')
+	while (format[x] && format)
 		x++;
-	while (format[i] != '\0')
+	while (format[i] && format)
 	{
 		if (i == (x - 1))
 			s = "";
