@@ -19,9 +19,12 @@ void print_all(const char * const format, ...)
 	while (format[x] != '\0')
 		x++;
 	if (x == 0)
+	{
 		printf("\n");
 		va_end(ap);
+	}
 	else
+	{
 		while ((format[i] != '\0') && (format))
 		{
 			if (i == (x - 1))
@@ -46,6 +49,7 @@ void print_all(const char * const format, ...)
 			}
 			i++;
 		}
+	}
 	printf("\n");
 	va_end(ap);
 }
