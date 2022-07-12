@@ -1,6 +1,6 @@
 #include "m.h"
 
-CC=gcc
+CC=gcc $(CFLAGS)
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
