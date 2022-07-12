@@ -1,5 +1,3 @@
-#include "m.h"
-
 CC=gcc
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
