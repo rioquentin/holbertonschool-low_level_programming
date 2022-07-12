@@ -1,11 +1,11 @@
 #include "m.h"
 
-CC=gcc $(CFLAGS)
+CC=(gcc $(CFLAGS))
 SRC=main.c school.c
 OBJ=$(SRC:.c=.o)
 NAME=school
 CFLAGS=-Wall -Werror -Wextra -pedantic
-all:$(CFLAGS)
+all:
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
