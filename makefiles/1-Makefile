@@ -1,0 +1,4 @@
+CC:gcc
+SRC:*.c
+all:
+	gcc SRC -o school
