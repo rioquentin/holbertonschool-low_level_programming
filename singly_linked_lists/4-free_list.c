@@ -14,6 +14,7 @@ void free_list(list_t *head)
 	{
 		trash = head;
 		head = head->next;
+		free(trash->str);
 		free(trash);
 	}
 }
