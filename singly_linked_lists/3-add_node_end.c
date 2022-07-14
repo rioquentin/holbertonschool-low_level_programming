@@ -32,10 +32,10 @@ list_t *add_node_end(list_t **head, const char *str)
 	node->len = strlen(node->str);
 	node->next = NULL;
 
-	while (head->next != NULL)
-		head = head->next;
+	while ((*head)->next != NULL)
+		head = (*head)->next;
 
-	head->next = node;
+	(*head)->next = node;
 
 	return (node);
 }
