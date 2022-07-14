@@ -9,19 +9,20 @@
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	if (head == NULL)
-		return (NULL);
-
 	list_t *node;
 
+	if (head == NULL)
+		return (NULL);
 	if (str == NULL)
 		return (NULL);
+
 	node = malloc(sizeof(list_t));
 	if (node == NULL)
 	{
 		free(node);
 		return (NULL);
 	}
+
 	node->str = strdup(str);
 	if (node->str == NULL)
 	{
