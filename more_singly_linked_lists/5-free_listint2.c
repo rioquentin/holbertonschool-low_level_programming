@@ -11,10 +11,13 @@ void free_listint2(listint_t **head)
 	listint_t *trash;
 	listint_t *tmp;
 
-	if (head == NULL)
-		return;
-
 	tmp = *head;
+	if (head == NULL)
+	{
+		head = "(nil)";
+		return;
+	}
+
 
 	while (tmp != NULL)
 	{
