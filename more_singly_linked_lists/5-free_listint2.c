@@ -6,7 +6,7 @@
  * Return: nothing
  */
 
-void free_listint2(listint_t *head)
+void free_listint2(listint_t **head)
 {
 	listint_t *trash;
 	if (head == NULL)
@@ -14,8 +14,8 @@ void free_listint2(listint_t *head)
 
 	while (head != NULL)
 	{
-		trash = head;
-		head = head->next;
+		trash = *head;
+		head = (*head)->next;
 		free(trash);
 	}
 }
