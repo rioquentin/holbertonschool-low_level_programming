@@ -11,7 +11,7 @@ listint_t *reverse_listint(listint_t **head)
 	while (*head)
 	{
 		*head = (*head)->next;
-		reverse_listint(&head);
+		reverse_listint(&**head);
 		printf("%d\n", h->n);
 	}
 	return (head);
