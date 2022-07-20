@@ -9,7 +9,8 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int wr, fd, txtc;
+	int rd, wr, fd, txtc;
+	void *buff;
 
 	if (filename == NULL)
 		return (-1);
@@ -23,7 +24,10 @@ int create_file(const char *filename, char *text_content)
 		txtc = open(text_content,  O_CREAT | O_TRUNC | O_RDWR);
 		if (txtc == -1)
 			return (-1);
-		wr = write(fd, txtc, 0);
+		rd = read(txtc, buff, 0);
+		if (rd == -1)
+			return (-1);
+		wr = write(fd, buff, 0);
 		if (wr == -1)
 			return (-1);
 	}
