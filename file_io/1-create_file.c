@@ -23,6 +23,7 @@ int create_file(const char *filename, char *text_content)
 		txt = open("test.txt", O_CREAT | O_RDONLY);
 		if (txt == -1)
 			return (-1);
+		text_content = malloc(sizeof(char) * 1);
 		read(txt, text_content, 0);
 
 	}
