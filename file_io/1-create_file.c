@@ -9,8 +9,7 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int rd, wr, fd, txtc;
-	void *buff;
+	int i, fd;
 
 	if (filename == NULL)
 		return (-1);
@@ -21,15 +20,17 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content == NULL)
 	{
-		txtc = open(text_content,  O_CREAT | O_TRUNC | O_RDWR);
-		if (txtc == -1)
-			return (-1);
-		rd = read(txtc, buff, 0);
-		if (rd == -1)
-			return (-1);
-		wr = write(fd, buff, 0);
-		if (wr == -1)
-			return (-1);
+		close(fd);
+		return (-1);
 	}
+
+	for (i = 0; text_content[i]; i++)
+		;
+
+	write(fd, text_content, i);
+	if (wr == -1)
+		return (-1);
+
+	close(fd);
 	return (1);
 }
