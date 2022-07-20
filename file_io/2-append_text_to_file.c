@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- * append_text_to_file - function 
+ * append_text_to_file - function
  * @filename: file name
- * @text_text: text
+ * @text_content: text
  * Return: 1 or -1
  */
 
