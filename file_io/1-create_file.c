@@ -24,6 +24,7 @@ int create_file(const char *filename, char *text_content)
 		if (txt == -1)
 			return (-1);
 		read(txt, text_content, 0);
+
 	}
 
 	for (i = 0; text_content[i]; i++)
