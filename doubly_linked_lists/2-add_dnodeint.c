@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * add_nodeint - function to add a node
+ * add_dnodeint - function to add a node
  * @head: pointer SLL
  * @n: value
  * Return: new node
