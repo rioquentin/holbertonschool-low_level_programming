@@ -19,10 +19,20 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 		return (NULL);
 	}
 
-	node->n = n;
-	node->next = *head;
-	node->prev = NULL;
-	*head = node;
+	if (*head == NULL)
+	{
+		node->n = n;
+		node->next = *head;
+		node->prev =  NULL;
+		*head = node;
+	}
+	else
+	{
+		node->n = n;
+		node->next = *head;
+		(*head)->prev = node;
+		*head = node;
+	}
 
 	return (node);
 }
