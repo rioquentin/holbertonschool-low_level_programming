@@ -1,6 +1,6 @@
 void free_dlistint(dlistint_t *head);
 {
-	stint_t *trash;
+	dlistint_t *trash;
 
 	while (head != NULL)
 	{
