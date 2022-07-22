@@ -1,21 +1,27 @@
 #include "main.h"
 #include <stdio.h>
 
+/**
+ * custom_error
+ * @filename: filename
+ * @code: code
+ * Return: void
+ */
 void custom_error(char *filename, int code)
 {
 	if (code == 97)
 		dprintf(2, "Usage: file_from file_to");
-	else if(code == 98)
+	else if (code == 99)
 		dprintf(2, "Error: Can't read from file %s\n", filename);
-	else if(code == 99)
+	else if (code == 98)
 		dprintf(2, "Error: Can't write to %s\n", filename);
 	exit(code);
 }
 
 /**
- * cp_from_to - function
- * @a: from 
- * @b: to
+ * main - function
+ * @ac: x
+ * @av: x
  * Return: 1
  */
 
