@@ -39,7 +39,7 @@ int main(int ac, char *av[])
 	cl = close(fd);
 	if (cl == -1)
 	{
-		dprintf(2, "Can't close fd %i\n", fd);
+		dprintf(2, "Error: Can't close fd\n");
 		exit(100);
 	}
 
