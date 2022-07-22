@@ -24,14 +24,14 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	while (i < idx)
 	{
 		i++;
-		tmp = *h;
-		(*h) = (*h)->next;
-		(*h)->prev = tmp;
+		*h = (*h)->next;
 	}
+	tmp = *h;
+	*h = (*h)->next;
 	node->n = n;
-	tmp->next = node;
 	node->next = *h;
 	node->prev = tmp;
-	*h = node;
+	tmp->next = node;
+	(*h)->prev = node;
 	return (node);
 }
