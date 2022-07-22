@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * custom_error
+ * custom_error - func
  * @filename: filename
  * @code: code
  * Return: void
@@ -11,10 +11,10 @@ void custom_error(char *filename, int code)
 {
 	if (code == 97)
 		dprintf(2, "Usage: file_from file_to");
-	else if (code == 99)
-		dprintf(2, "Error: Can't read from file %s\n", filename);
 	else if (code == 98)
-		dprintf(2, "Error: Can't write to %s\n", filename);
+		dprintf(2, "Error: Can't read from file %s\n", filename);
+	else if (code == 99)
+		dprintf(2, "Error: Can't read to %s\n", filename);
 	exit(code);
 }
 
