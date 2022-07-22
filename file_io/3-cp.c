@@ -26,7 +26,7 @@ int main(int ac, char *av[])
 	fd = open(file_from, O_RDONLY);
 	if (fd == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
+		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 
@@ -36,14 +36,14 @@ int main(int ac, char *av[])
 	fd = open(file_to, O_CREAT | O_TRUNC | O_WRONLY, 0664);
 	if (fd == -1)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 
 	wr = write(fd, &buf, len);
 	if (wr == -1)
 	{
-		dprintf(2, "Error: Can't write to %s\n", argv[2]);
+		dprintf(2, "Error: Can't write to %s\n", av[2]);
 		exit(99);
 	}
 
