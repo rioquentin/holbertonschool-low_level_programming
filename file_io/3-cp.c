@@ -33,13 +33,13 @@ int main(int ac, char *av[])
 	len = read(fd, buf, 1024);
 	if (len == -1)
 	{
-		dprintf(stderr, "Error: Can't read from file %s\n", av[1]);
+		dprintf(2, "Error: Can't read from file %s\n", av[1]);
 		exit(98);
 	}
 	close(fd);
 	if (close == -1)
 	{
-		dprintf(stderr, "Can't close fd %i\n", fd);
+		dprintf(2, "Can't close fd %i\n", fd);
 		exit(100);
 	}
 
