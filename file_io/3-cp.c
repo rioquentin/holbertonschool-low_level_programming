@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 
 void custom_error(char *filename, int code)
 {
@@ -18,7 +19,7 @@ void custom_error(char *filename, int code)
  * Return: 1
  */
 
-int main(int argc, char *argv[])
+int main(int ac, char *av[])
 {
 	char buf[1024];
 	int fd = 0, wr = 0;
