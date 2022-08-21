@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(vtmp);
 			return (1);
 		}
-		tmp = temp->next;	
+		tmp = tmp->next;	
 	}
 
 	node = malloc(sizeof(hash_node_t));
