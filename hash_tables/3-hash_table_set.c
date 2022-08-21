@@ -19,9 +19,9 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	vtmp = strdup(value);
 	node = malloc(sizeof(hash_node_t));
-	if (new == NULL)
+	if (node == NULL)
 	{
-		free(new);
+		free(node);
 		return (0);
 	}
 	node->value = vtmp;
