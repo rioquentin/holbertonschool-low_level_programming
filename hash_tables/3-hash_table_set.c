@@ -10,10 +10,10 @@
 
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
-	char * vtmp = NULL;
+	char *vtmp = NULL;
 	unsigned int ki = key_index((unsigned char *)key, ht->size);
-	hash_node_t * node;
-	hash_node_t * tmp;
+	hash_node_t *node;
+	hash_node_t *tmp;
 
 	if (ht->array == NULL || value == NULL || ht == NULL)
 		return (0);
@@ -32,7 +32,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 			free(vtmp);
 			return (1);
 		}
-		tmp = tmp->next;	
+		tmp = tmp->next;
 	}
 
 	node = malloc(sizeof(hash_node_t));
