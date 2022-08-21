@@ -11,8 +11,7 @@
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	char * vtmp = NULL;
-	unsigned int ki = key_index(key, ht->size);
-	hash_node_t * tmp;
+	unsigned int ki = key_index(*key, ht->size);
 	hash_node_t * node;
 
 	if (ht == NULL)
